@@ -3,7 +3,7 @@
                 FPL Fonts -- SC/OsF for URW Palladio L
 
 ======================================================================
-                                                            2005-02-05
+                                                            2005-02-13
                                                           Ralf Stubner 
                                                  <ralf.stubner@web.de>
 
@@ -28,6 +28,9 @@ from Walter Schmidt's improved Palatino metrics.
 
 History
 -------
+
+Version 1.002 2005-02-13 
+        * no div operator (compatibility problems)
 
 Version 1.001 2005-02-05
         * fixed lcaron in SC font

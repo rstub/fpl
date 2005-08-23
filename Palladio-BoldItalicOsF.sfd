@@ -16,6 +16,10 @@ OS2WinAscent: 0
 OS2WinAOffset: 1
 OS2WinDescent: 0
 OS2WinDOffset: 1
+HheadAscent: 0
+HheadAOffset: 1
+HheadDescent: 0
+HheadDOffset: 1
 ScriptLang: 2
  1 latn 1 dflt 
  1 DFLT 1 dflt 
@@ -24,7 +28,7 @@ UnicodeInterp: none
 DisplaySize: -24
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 16 16 4
+WinInfo: 0 24 11
 BeginPrivate: 7
 BlueValues 23 [-20 0 452 472 681 701]
 BlueScale 8 0.039625
@@ -42,86 +46,107 @@ BeginChars: 422 329
 StartChar: .notdef
 Encoding: 0 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 1 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 2 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 3 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 4 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 5 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 6 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 7 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 8 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 9 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 10 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 11 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 12 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 13 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 14 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 15 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 16 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 17 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 18 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 19 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 20 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 21 -1 315
@@ -152,42 +177,52 @@ EndChar
 StartChar: .notdef
 Encoding: 22 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 23 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 24 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 25 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 26 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 27 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 28 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 29 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 30 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 31 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: quoteright
 Encoding: 39 8217 267
@@ -198,7 +233,7 @@ EndChar
 StartChar: zero
 Encoding: 48 48 212
 Width: 500
-Flags: W
+Flags: HW
 HStem: -12 38<189.991 206> 440 37<294 300>
 VStem: 26 114<92 160> 360 106<306 375>
 Fore
@@ -222,9 +257,8 @@ EndChar
 StartChar: one
 Encoding: 49 49 203
 Width: 500
-Flags: W
+Flags: HW
 HStem: 0 21G<246 268>
-DStem: 246 390 368 391 190 92 316 100
 Fore
 41 -3 m 1
  46 30 l 1
@@ -251,7 +285,7 @@ EndChar
 StartChar: two
 Encoding: 50 50 204
 Width: 500
-Flags: W
+Flags: HW
 HStem: -3 96<149 365> 0 93<149 226 226.016 269.946> 399 79<198 243>
 VStem: 305 116<325 347>
 Fore
@@ -280,7 +314,7 @@ StartChar: three
 Encoding: 51 51 205
 Width: 500
 VWidth: 771
-Flags: W
+Flags: HW
 HStem: 134 38<137 174> 397 80<196 242>
 VStem: 291 119<306 342>
 Fore
@@ -311,9 +345,8 @@ EndChar
 StartChar: four
 Encoding: 52 52 206
 Width: 500
-Flags: W
+Flags: HW
 HStem: -2 76<80 229>
-DStem: 229 -2 342 -2 189 -240 307 -220 305 409 433 485 244 74 356 74 463 77 463 77 356 74 467 75
 Fore
 342 -2 m 1
  307 -220 l 17
@@ -341,7 +374,7 @@ StartChar: five
 Encoding: 53 53 207
 Width: 500
 VWidth: 832
-Flags: W
+Flags: HW
 HStem: 362 102<241 313.319>
 VStem: 293 128<33 51>
 Back
@@ -367,7 +400,7 @@ EndSplineSet
 Fore
 111 230 m 1
  223 214 421 238 421 40 c 0
- 421 -107.003 228 -311 -28 -239 c 9
+ 421 -107 228 -311 -28 -239 c 9
  -3 -164 l 17
  196 -278 293 -59 293 35 c 0
  293 168 124 152 58 170 c 1
@@ -415,7 +448,7 @@ StartChar: seven
 Encoding: 55 55 209
 Width: 500
 VWidth: 801
-Flags: W
+Flags: HW
 HStem: 358 111<199 403>
 Fore
 15 -249 m 1
@@ -440,7 +473,7 @@ EndChar
 StartChar: eight
 Encoding: 56 56 210
 Width: 500
-Flags: W
+Flags: HW
 HStem: -17 46<196 220> 637 46<305 332>
 VStem: 26 82<126 145> 97 97<469 522> 348 106<155 218> 404 80<533 554>
 Fore
@@ -477,7 +510,7 @@ StartChar: nine
 Encoding: 57 57 211
 Width: 500
 VWidth: 801
-Flags: W
+Flags: HW
 HStem: 47 71<165 223> 435 49<249 277>
 VStem: 20 120<218 253> 330 125<257 304>
 Fore
@@ -507,138 +540,172 @@ EndChar
 StartChar: .notdef
 Encoding: 127 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 128 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 129 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 130 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 131 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 132 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 133 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 134 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 135 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 136 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 137 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 138 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 139 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 140 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 141 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 142 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 143 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 144 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 145 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 146 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 147 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 148 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 149 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 150 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 151 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 152 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 153 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 154 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 155 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 156 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 157 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 158 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 159 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 160 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: fraction
 Encoding: 164 8260 276
@@ -692,6 +759,7 @@ EndChar
 StartChar: .notdef
 Encoding: 176 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: endash
 Encoding: 177 8211 242
@@ -716,6 +784,7 @@ EndChar
 StartChar: .notdef
 Encoding: 181 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: bullet
 Encoding: 183 8226 297
@@ -753,10 +822,12 @@ EndChar
 StartChar: .notdef
 Encoding: 190 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 192 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: grave
 Encoding: 193 96 284
@@ -807,6 +878,7 @@ EndChar
 StartChar: .notdef
 Encoding: 201 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: ring
 Encoding: 202 730 282
@@ -823,6 +895,7 @@ EndChar
 StartChar: .notdef
 Encoding: 204 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: hungarumlaut
 Encoding: 205 733 289
@@ -849,66 +922,82 @@ EndChar
 StartChar: .notdef
 Encoding: 209 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 210 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 211 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 212 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 213 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 214 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 215 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 216 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 217 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 218 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 219 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 220 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 221 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 222 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 223 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 224 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: AE
 Encoding: 225 198 159
@@ -918,6 +1007,7 @@ EndChar
 StartChar: .notdef
 Encoding: 226 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: ordfeminine
 Encoding: 227 170 270
@@ -927,18 +1017,22 @@ EndChar
 StartChar: .notdef
 Encoding: 228 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 229 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 230 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 231 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: Lslash
 Encoding: 232 321 164
@@ -964,22 +1058,27 @@ EndChar
 StartChar: .notdef
 Encoding: 236 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 237 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 238 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 239 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 240 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: ae
 Encoding: 241 230 192
@@ -989,14 +1088,17 @@ EndChar
 StartChar: .notdef
 Encoding: 242 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 243 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 244 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: dotlessi
 Encoding: 245 305 196
@@ -1006,10 +1108,12 @@ EndChar
 StartChar: .notdef
 Encoding: 246 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 247 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: lslash
 Encoding: 248 322 200
@@ -1034,18 +1138,22 @@ EndChar
 StartChar: .notdef
 Encoding: 252 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 253 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 254 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: .notdef
 Encoding: 255 -1 315
 Width: 250
+Flags: H
 EndChar
 StartChar: Adieresis
 Encoding: 256 196 0
