@@ -1,0 +1,42 @@
+#!/usr/bin/env fontforge
+
+Open("uplb8a.pfb");
+# proper setup with names etc
+fontname="TeXPalladioL-BoldOsF";
+fontfamily="TeX Palladio L";
+fullname="TeX Palladio L Bold Old Style Figures";
+copyright="Copyright (URW)++,Copyright 1999 by (URW)++ Design & Development,Copyright 2004 Ralf Stubner";
+fontversion="1.000";
+
+SetFontNames(fontname,fontfamily,fullname,"",copyright,fontversion);
+SetUniqueID(0);
+
+# copy OsF 
+Select("zero","nine");
+Clear();
+MergeFonts("Palladio-BoldOsF.sfd");
+
+# adjust underscore
+Select("underscore");
+Scale(100,116,0,0);
+Move(0,-15);
+
+# adjust emdash
+Select("emdash");
+Scale(75,100,0,0);
+Move(125,0);
+SetWidth(1000);
+RoundToInt();
+
+# kerning
+RemoveAllKerns();
+MergeKern("pplb9d-kern.afm");
+
+Save("TeXPalladioL-BoldOsF.sfd");
+# generte Type1, scale generate TTF
+Generate("fplbj8a.pfb","",3); 
+ScaleToEm(2048);
+Generate("fplbj8a.ttf","",0x80); 
+
+Quit(0);
+

@@ -1,0 +1,82 @@
+#!/usr/bin/env fontforge
+
+Open("uplr8a.pfb");
+# proper setup with names etc
+fontname="TeXPalladioL-SC";
+fontfamily="TeX Palladio L";
+fullname="TeX Palladio L Small Caps & Old Style Figures";
+copyright="Copyright (URW)++,Copyright 1999 by (URW)++ Design & Development,Copyright 2004 Ralf Stubner";
+fontversion="1.000";
+
+SetFontNames(fontname,fontfamily,fullname,"",copyright,fontversion);
+SetUniqueID(0);
+
+# copy OsF and SC
+Select("zero","nine", "a","z", "grave","caron");
+SelectMore("ae");
+SelectMore("dotlessi");
+SelectMore("lslash");
+SelectMore("oslash");
+SelectMore("oe");
+SelectMore("adieresis","iogonek", "dcroat","thorn"); 
+Clear();
+MergeFonts("Palladio-SC.sfd");
+
+# build ligatures
+Select("fi","fl");
+BuildComposite();
+UnlinkReference();
+
+Select("s");
+Copy();
+Select("germandbls");
+Clear();
+Paste();
+Move(444,0); # width of s
+PasteInto();
+SetWidth(888);
+
+# build q and real accents
+Select("q");
+SelectMore("lslash");
+SelectMore("oslash");
+SelectMore("aogonek");
+SelectMore("ccedilla");
+SelectMore("eogonek");
+SelectMore("uogonek");
+SelectMore("scedilla");
+SelectMore("iogonek");
+SelectMore("dcroat");
+UnlinkReference();
+RemoveOverlap();
+Simplify();
+RoundToInt();
+
+# adjust underscore
+Select("underscore");
+Scale(100,116,0,0);
+Move(0,-15);
+
+# adjust emdash
+Select("emdash");
+Scale(75,100,0,0);
+Move(125,0);
+SetWidth(1000);
+RoundToInt();
+
+
+# kerning
+RemoveAllKerns();
+MergeKern("pplrc9d-kern.afm");
+
+# Add BlueValues 
+ChangePrivateEntry("BlueValues","[-20 0 469 481 487 499 692 712]");
+
+Save("TeXPalladioL-SC.sfd");
+# generte Type1, scale generate TTF
+Generate("fplrc8a.pfb","",3); 
+ScaleToEm(2048);
+Generate("fplrc8a.ttf","",0x80); 
+
+Quit(0);
+

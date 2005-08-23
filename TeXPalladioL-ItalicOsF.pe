@@ -1,0 +1,47 @@
+#!/usr/bin/env fontforge
+
+Open("uplri8a.pfb");
+# proper setup with names etc
+fontname="TeXPalladioL-ItalicOsF";
+fontfamily="TeX Palladio L";
+fullname="TeX Palladio L Italic Old Style Figures";
+copyright="Copyright (URW)++,Copyright 1999 by (URW)++ Design & Development,Copyright 2004 Ralf Stubner";
+fontversion="1.000";
+
+SetFontNames(fontname,fontfamily,fullname,"",copyright,fontversion);
+SetUniqueID(0);
+
+# copy OsF 
+Select("zero","nine");
+Clear();
+MergeFonts("Palladio-ItalicOsF.sfd");
+
+# adjust underscore
+Select("underscore");
+Scale(100,116,0,0);
+Move(0,-15);
+
+# adjust emdash
+Select("emdash");
+Scale(75,100,0,0);
+Move(125,0);
+SetWidth(1000);
+RoundToInt();
+
+# adjust dotaccent
+Select("dotaccent");
+Move(-50,0);
+SetWidth(333);
+
+# kerning
+RemoveAllKerns();
+MergeKern("pplri9d-kern.afm");
+
+Save("TeXPalladioL-ItalicOsF.sfd");
+# generte Type1, scale generate TTF
+Generate("fplrij8a.pfb","",3); 
+ScaleToEm(2048);
+Generate("fplrij8a.ttf","",0x80); 
+
+Quit(0);
+
