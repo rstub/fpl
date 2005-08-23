@@ -3,10 +3,10 @@ FPL Fonts -- Sources
 
 This directory contains:
 
-*.sfd    FontForge source files for the new glyphs in the FPL Fonts
-*.afm    Metric files containing kerning information 
-*.pe     FontForge scripts for generating final fonts
-
+FontForge source files for the new glyphs in the FPL Fonts (*.sfd)
+Metric files containing kerning information (*.afm)
+FontForge scripts for generating final fonts (*.pe, AddGPL, AddException)
+The OtherSubrs from the original URW fonts (URW-OtherSubrs.ps)
 
 In order to produce the FPL Fonts, you will also need the four shapes of
 the URW Palladio L font:
@@ -18,5 +18,8 @@ uplbi8a.pfb   URW Palladio L Bold Italic
 
 These are typically located in $TEXMF/fonts/type1/urw/palatino/.
 
+Note that the FontForge scripts use ReadOtherSubrsFile(), which has been
+added to the CVS on 2004-02-02. 
+
 Ralf Stubner
-2004-09-19
+2005-02-05

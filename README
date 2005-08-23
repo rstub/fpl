@@ -3,7 +3,7 @@
                 FPL Fonts -- SC/OsF for URW Palladio L
 
 ======================================================================
-                                                            2004-08-02
+                                                            2005-02-05
                                                           Ralf Stubner 
                                                  <ralf.stubner@web.de>
 
@@ -29,6 +29,12 @@ from Walter Schmidt's improved Palatino metrics.
 History
 -------
 
+Version 1.001 2005-02-05
+        * fixed lcaron in SC font
+        * no references (compatibility problems)
+        * no UniqueID
+        * OtherSubrs from URW fonts
+
 Version 1.000 2004-08-02
 	First official release
 
@@ -36,8 +42,8 @@ Version 1.000 2004-08-02
 Deficiencies
 ------------
 
-Only automatic hinting as done by FontForge has been applied to the SC
-and OsF characters.
+On the character level only automatic hinting as done by FontForge has
+been applied to the SC and OsF glyphs.
 
 
 Usage with LaTeX
@@ -46,13 +52,17 @@ Usage with LaTeX
 As the FPL Fonts have the same metrics as their Adobe counterparts, the
 improved Palatino metrics by Walter Schmidt can be used. They are part
 of PSNFSS 9.2, which can be found on CTAN:macros/latex/required/psnfss/.
-Please refer to his excellent installation instructions.
+Therefore, it is best to update your TeX distribution to a version which
+provides PSNFSS 9.2. The usage with LaTeX is documented in psnfss2e.pdf.
+Please follow the installation instruction from PSNFSS, if you want to
+upgrade PSNFSS only. 
+
 
 License
 -------
 
 Copyright (URW)++,Copyright 1999 by (URW)++ Design & Development
-Copyright 2004 Ralf Stubner
+Copyright 2004, 2005 Ralf Stubner
 
 See the file COPYING (GNU General Public License) for license
 conditions. As a special exception, permission is granted to include
