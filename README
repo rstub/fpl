@@ -3,7 +3,7 @@
                 FPL Fonts -- SC/OsF for URW Palladio L
 
 ======================================================================
-                                                            2005-02-13
+                                                            2018-12-11
                                                           Ralf Stubner 
                                                  <ralf.stubner@web.de>
 
@@ -22,12 +22,19 @@ with the glyphs from URW Palladio L as starting point. For some glyphs
 (eg 'o') I got the best result by scaling and boldening. For others (eg
 'h') shifting selected portions of the character gave more satisfying
 results. All this was done using the free font editor FontForge
-<URL:http://fontforge.sf.net>. The kerning data in these fonts comes
-from Walter Schmidt's improved Palatino metrics.
+<URL:https://fontforge.github.io/>. The kerning data in these fonts comes
+from Walter Schmidt's improved Palatino metrics. Please report any issues
+at <URL:https://github.com/rstub/fpl/issues>.
 
 
 History
 -------
+
+Version 1.003 2018-12-11
+        * Regenerate the fonts with current FontForge resolving
+	  PDF/A compatibility problem.
+	* Use the same dual licensing as the original URW fonts, c.f.
+          <URL:http://www.tug.org/fonts/lppl-urw.txt>
 
 Version 1.002 2005-02-13 
         * no div operator (compatibility problems)
@@ -72,5 +79,9 @@ conditions. As a special exception, permission is granted to include
 this font program in a Postscript or PDF file that consists of a
 document that contains text to be displayed or printed using this font,
 regardless of the conditions or license applying to the document itself.
+
+Alternativley you can use these fonts subject to the LaTeX Project Public
+License <URL:http://www.latex-project.org/lppl>, either version 1 or (at
+your option) any later version.
 
 == The End ==

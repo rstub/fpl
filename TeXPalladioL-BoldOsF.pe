@@ -12,7 +12,7 @@ fullname="TeX Palladio L Bold Old Style Figures";
 copyright=$copyright+", Copyright 2004, 2005 Ralf Stubner.";
 copyright=AddGPL(copyright);
 copyright=AddException(copyright);
-fontversion="1.002";
+fontversion="1.003";
 
 SetFontNames(fontname,fontfamily,fullname,"",copyright,fontversion);
 # No UniqueID (needs recent ff to work properly)

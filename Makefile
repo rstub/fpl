@@ -25,15 +25,17 @@ fplbj8a.pfb: $(BD_SOURCE)
 fplbij8a.pfb: $(BI_SOURCE) 
 	$(FONTFORGE) TeXPalladioL-BoldItalicOsF.pe
 
+clean:
+	rm -f fpl*8a.* TeXPalladioL*sfd
 
 dist: all
 	rm -rf dist/
-	mkdir -p dist/{type1,afm,pfm,source}
+	mkdir -p dist/type1 dist/afm dist/pfm dist/source
 	cp README COPYING dist/ 
 	cp fplrc8a.pfb fplrij8a.pfb fplbj8a.pfb fplbij8a.pfb dist/type1/
 	cp fplrc8a.pfm fplrij8a.pfm fplbj8a.pfm fplbij8a.pfm dist/pfm/
 	cp fplrc8a.afm fplrij8a.afm fplbj8a.afm fplbij8a.afm dist/afm/
 	cp $(SOURCE) Makefile dist/source/ 
 	cp README.source dist/source/README
-	(cd dist; zip fpl.zip README COPYING {type1,afm,pfm,source}/*)
+	(cd dist; zip -r fpl.zip README COPYING type1 afm pfm source)
 
